@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.hayawanat.app.ui.home.HomeFragment"
+        android:label="Accueil">
+        <action android:id="@+id/actionHomeToMatch"
+            app:destination="@id/matchFragment" />
+        <action android:id="@+id/actionHomeToMemory"
+            app:destination="@id/memoryFragment" />
+        <action android:id="@+id/actionHomeToPuzzle"
+            app:destination="@id/puzzleFragment" />
+        <action android:id="@+id/actionHomeToListen"
+            app:destination="@id/listenFragment" />
+        <action android:id="@+id/actionHomeToQuiz"
+            app:destination="@id/quizFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/matchFragment"
+        android:name="com.hayawanat.app.ui.match.MatchFragment"
+        android:label="Relier">
+        <argument android:name="level" app:argType="integer" android:defaultValue="0" />
+        <action android:id="@+id/actionMatchToResult" app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/memoryFragment"
+        android:name="com.hayawanat.app.ui.memory.MemoryFragment"
+        android:label="Mémory">
+        <argument android:name="level" app:argType="integer" android:defaultValue="0" />
+        <action android:id="@+id/actionMemoryToResult" app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/puzzleFragment"
+        android:name="com.hayawanat.app.ui.puzzle.PuzzleFragment"
+        android:label="Puzzle">
+        <argument android:name="level" app:argType="integer" android:defaultValue="0" />
+        <action android:id="@+id/actionPuzzleToResult" app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listenFragment"
+        android:name="com.hayawanat.app.ui.listen.ListenFragment"
+        android:label="Écouter">
+        <argument android:name="level" app:argType="integer" android:defaultValue="0" />
+        <action android:id="@+id/actionListenToResult" app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.hayawanat.app.ui.quiz.QuizFragment"
+        android:label="Quiz">
+        <argument android:name="level" app:argType="integer" android:defaultValue="0" />
+        <action android:id="@+id/actionQuizToResult" app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.hayawanat.app.ui.result.ResultFragment"
+        android:label="Résultat">
+        <argument android:name="score" app:argType="integer" android:defaultValue="0" />
+        <argument android:name="total" app:argType="integer" android:defaultValue="0" />
+        <argument android:name="gameMode" app:argType="string" android:defaultValue="QUIZ" />
+        <argument android:name="level" app:argType="integer" android:defaultValue="0" />
+    </fragment>
+
+</navigation>

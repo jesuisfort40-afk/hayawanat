@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hayawanat حيوانات</string>
+    <string name="game_match">🔗 Relier</string>
+    <string name="game_memory">🃏 Mémory</string>
+    <string name="game_puzzle">🧩 Puzzle</string>
+    <string name="game_listen">🔊 Écouter</string>
+    <string name="game_quiz">⚡ Quiz</string>
+    <string name="difficulty_all">Tous</string>
+    <string name="difficulty_beginner">Débutant</string>
+    <string name="difficulty_intermediate">Intermédiaire</string>
+    <string name="difficulty_expert">Expert</string>
+    <string name="btn_replay">🔄 Rejouer</string>
+    <string name="btn_home">🏠 Accueil</string>
+    <string name="listen_instruction">Écoute et trouve l\'animal !</string>
+    <string name="btn_speak">🔊 Écouter</string>
+</resources>
